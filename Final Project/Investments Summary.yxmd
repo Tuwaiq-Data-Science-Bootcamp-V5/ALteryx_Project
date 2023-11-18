@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="90" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">tadawul.xlsx|||`companies$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>tadawul.xlsx
+Query=`companies$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="companySymbol" size="255" source="File: C:\Users\majed\Downloads\Investments Summary\tadawul.xlsx|||`companies$`" type="V_String" />
+            <Field name="lonaName" size="255" source="File: C:\Users\majed\Downloads\Investments Summary\tadawul.xlsx|||`companies$`" type="V_String" />
+            <Field name="shortName" size="255" source="File: C:\Users\majed\Downloads\Investments Summary\tadawul.xlsx|||`companies$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="90" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">tadawul.xlsx|||`prices$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>tadawul.xlsx
+Query=`prices$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="companySymbol" size="255" source="File: C:\Users\majed\Downloads\Investments Summary\tadawul.xlsx|||`prices$`" type="V_String" />
+            <Field name="Date" source="File: C:\Users\majed\Downloads\Investments Summary\tadawul.xlsx|||`prices$`" type="Date" />
+            <Field name="Price" source="File: C:\Users\majed\Downloads\Investments Summary\tadawul.xlsx|||`prices$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="68">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="90" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="6" />
+          <Fields>
+            <Field name="investor_id" />
+            <Field name="companySymbol" />
+            <Field name="Total Shares" />
+            <Field name="Transaction Date" />
+          </Fields>
+          <Data>
+            <r>
+              <c>asdf-xyq-pdas</c>
+              <c>2010</c>
+              <c>10</c>
+              <c>2018-12-30</c>
+            </r>
+            <r>
+              <c>asdf-xyq-pdas</c>
+              <c>2290</c>
+              <c>10</c>
+              <c>2018-12-30</c>
+            </r>
+            <r>
+              <c>asdf-xyq-pdas</c>
+              <c>4003</c>
+              <c>5</c>
+              <c>2018-12-30</c>
+            </r>
+            <r>
+              <c>asdf-xyq-pdas</c>
+              <c>7010</c>
+              <c>50</c>
+              <c>2016-09-21</c>
+            </r>
+            <r>
+              <c>qwer-qwer-lkjj</c>
+              <c>2290</c>
+              <c>100</c>
+              <c>2020-05-03</c>
+            </r>
+            <r>
+              <c>qwer-qwer-lkjj</c>
+              <c>7010</c>
+              <c>500</c>
+              <c>2015-02-01</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="investor_id" size="14" source="TextInput:" type="String" />
+            <Field name="companySymbol" source="TextInput:" type="Int16" />
+            <Field name="Total Shares" source="TextInput:" type="Int16" />
+            <Field name="Transaction Date" source="TextInput:" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="71">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="90" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="2" />
+          <Fields>
+            <Field name="investor_id" />
+            <Field name="investor_name" />
+            <Field name="email" />
+          </Fields>
+          <Data>
+            <r>
+              <c>qwer-qwer-lkjj</c>
+              <c>YourName</c>
+              <c>YourEmail</c>
+            </r>
+            <r>
+              <c>asdf-xyq-pdas</c>
+              <c>YourFriendsName</c>
+              <c>YourFriendsEmail</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="investor_id" size="14" source="TextInput:" type="String" />
+            <Field name="investor_name" size="15" source="TextInput:" type="String" />
+            <Field name="email" size="16" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="69">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="342" width="624" height="372" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[In this project, you're given a list of investors that bought some stocks. You're asked to output a PDF report for each investor highlighting the followings:
+
+1. The Performance of the portfolio 
+- Total Current Value
+- Total Profit/Loss
+
+2. Performance for all stocks
+- Stock symbol
+- Company Name
+- Total Shares
+- Total Cost
+- Total Value
+- Profit/Loss %
+
+3. The top performer stock in terms of Profit %
+- Stock symbol
+- Company Name
+- Total Cost
+- Total Profit
+- Profit %
+
+]]></Text>
+          <Font name="Arial" size="11.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="1" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections />
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Investments Summary</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="6ead0775-fe5c-4f1f-9905-076ecb8c4996" />
+      <Telemetry>
+        <PreviousWorkflowId value="9ab88ee4-2243-44e4-a5f2-3d22d30c05f5" />
+        <OriginWorkflowId value="9ab88ee4-2243-44e4-a5f2-3d22d30c05f5" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
